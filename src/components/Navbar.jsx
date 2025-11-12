@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 const Navbar = ({ hidden = false }) => {
-  // ⛔ Saat hidden, jangan render apa pun
   if (hidden) return null;
 
   const [active, setActive] = useState(false);
@@ -18,7 +17,7 @@ const Navbar = ({ hidden = false }) => {
       {/* Logo */}
       <div className="logo">
         <h1 className="text-3xl font-bold text-white p-1 md:bg-transparent md:text-white">
-          Portofolio
+          Portfolio
         </h1>
       </div>
 
